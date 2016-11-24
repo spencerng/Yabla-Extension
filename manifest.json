@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Yabla Tool",
+	"description": "Download transcriptions and complete Fill in the Blank automatically",
+	"version": "1.0",
+	"web_accessible_resources" : ["js/interface.js"],
+	"permissions": [
+          "contextMenus", "tabs"
+    ],
+	
+	"content_scripts": [
+		{ "matches": ["https://*.yabla.com/player*"],
+		  "js": ["js/injecter.js"]
+		}
+	],
+	"icons":{
+		"128": "img/icon128.png",
+		"16": "img/icon16.png",
+		"48": "img/icon48.png"
+	},
+	"browser_action": {
+    "default_icon": "img/icon48.png"
+  }
+}
