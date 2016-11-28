@@ -2,7 +2,7 @@
 
 Google Chrome extension to download video transcripts and translations of videos on [Yabla](https://www.yabla.com/)
 
-###Installation
+###Extension Installation
 
 1. Download the zipped repository [here](https://github.com/spencerng/Yabla-Extension/archive/1.0.zip)
 2. Unzip the downloaded `.zip` file
@@ -10,6 +10,10 @@ Google Chrome extension to download video transcripts and translations of videos
 4. Ensure developer mode is checked
 5. Click "Load unpacked extension" and select the directory of the unzipped repository
 6. Confirm installation and enjoy
+
+###Userscript Installation
+1. Install the [Tampermonkey extension](https://tampermonkey.net/)
+2. Click [here](https://github.com/spencerng/Yabla-Extension/raw/master/yabla.user.js) to install the script
 
 ###Usage
 
