@@ -17,6 +17,12 @@ completeButton.innerHTML = "Complete"
 
 document.getElementsByClassName("group")[0].appendChild(completeButton);
 
+var mcCompleteButton = document.createElement("span");
+mcCompleteButton.className = "fullscreen button"
+mcCompleteButton.innerHTML = "Complete MC"
+
+document.getElementsByClassName("group")[0].appendChild(mcCompleteButton);
+
 
 var complete = false; //Toggle fill in the blank auto completion
 
@@ -25,6 +31,20 @@ completeButton.onclick = function(){
 	document.getElementsByClassName("game_type")[1].click();
 	document.getElementsByClassName("blue button start_game")[0].click();
 	putWord();
+};
+
+mcCompleteButton.onclick = function(){
+    document.getElementsByClassName("game_type")[0].click();
+    document.getElementsByClassName("blue button start_game")[0].click();
+    var ansButton = document.createElement("span");
+    ansButton.className = "slow button"
+    ansButton.innerHTML = "Get Answer"
+
+    document.getElementsByClassName("game_controls")[0].appendChild(ansButton);
+
+    ansButton.onclick = function(){
+        putWord();
+    };
 };
 
 var nextButton = document.getElementsByClassName("next button blue")[0];
@@ -142,6 +162,16 @@ function putWord(){
 	var answerBox = document.getElementsByClassName("answer")[0];
 
 	answerBox.value = correctWord;
+
+	var buttons = document.getElementsByClassName("button")
+
+	for(var i = 0; i < buttons.length; i++){
+		if(buttons[i].innerHTML===correctWord){
+			buttons[i].click()
+			break;
+		}
+
+	}
 
 }
 

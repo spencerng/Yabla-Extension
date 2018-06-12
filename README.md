@@ -1,14 +1,21 @@
-#Yabla-Extension
+# Yabla-Extension
 
 Google Chrome extension to download video transcripts and translations of videos on [Yabla](https://www.yabla.com/)
 
-###Installation
+### Extension Installation
 
-1. Download the `.crx` extension file [here](https://github.com/spencerng/Yabla-Extension/raw/master/Yabla-Extension.crx)
-2. Go to `chrome://extensions` or Settings > More Tools > Extensions
-3. Drag and drop the extension file and confirm installation
+1. Download the zipped repository [here](https://github.com/spencerng/Yabla-Extension/archive/1.0.zip)
+2. Unzip the downloaded `.zip` file
+3. Go to `chrome://extensions` or More Tools > Extensions
+4. Ensure developer mode is checked
+5. Click "Load unpacked extension" and select the directory of the unzipped repository
+6. Confirm installation and enjoy
 
-###Usage
+### Userscript Installation
+1. Install the [Tampermonkey extension](https://tampermonkey.net/)
+2. Click [here](https://github.com/spencerng/Yabla-Extension/raw/master/yabla.user.js) to install the script
+
+### Usage
 
 Navigate to a Yabla video page (where the URL is `https://<language>.yabla.com/player<video ID>`)
 
@@ -16,8 +23,8 @@ Navigate to a Yabla video page (where the URL is `https://<language>.yabla.com/p
 * Click the "Auto Complete" button to complete the Fill in the Blank game
 * Click the "Complete" button to play the Fill in the Blank game with words filled in automatically
 
-###Notes
+### Notes
 
-* Auto completion feature may not work on some videos. 
+* Auto completion feature may not work on some videos or may require multiple attempts to be successful. 
 * Completion features are not supported on Chinese videos.
 * Translations of English videos are only available if Yabla provides them for your native language.
